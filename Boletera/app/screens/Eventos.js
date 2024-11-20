@@ -25,7 +25,6 @@ function Eventos() {
       lugar: 'Museo de Arte Contemporáneo',
       descripcion: 'Explora las obras de arte más innovadoras del año.',
     },
-    // Puedes agregar más eventos aquí
   ];
 
   return (
@@ -57,7 +56,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.1,
     shadowRadius: 5,
-    elevation: 3, // Para dispositivos Android
+    elevation: 3,
   },
   eventName: {
     fontSize: 20,
