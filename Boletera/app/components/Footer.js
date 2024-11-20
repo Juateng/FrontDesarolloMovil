@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     width: '100%',
     padding: 10,
-    backgroundColor: '#f8f8f8', // color del fondo opcional
+    backgroundColor: '#f8f8f8', 
     borderTopWidth: 1,
     borderColor: '#ddd',
   },

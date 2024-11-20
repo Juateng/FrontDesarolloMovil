@@ -12,14 +12,14 @@ function AppText({ texto, style }) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff', // Fondo blanco
+    backgroundColor: '#fff', 
     padding: 10,
-    borderRadius: 8, // Bordes redondeados opcionales
+    borderRadius: 8, 
     marginVertical: 10,
     textAlign: 'center',
   },
   text: {
-    color: '#000', // Texto negro
+    color: '#000', 
     fontSize: 18,
     fontWeight: 'bold',
   },

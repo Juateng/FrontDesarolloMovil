@@ -4,7 +4,7 @@ import AppButton from '../components/AppButton';
 import colors from '../config/colors';
 import AppText from '../components/AppText';
 
-function Dashboard({ navigation }) {  // Desestructuramos `navigation` de las props
+function Dashboard({ navigation }) {  
   return (
     <ImageBackground
       style={styles.background}
@@ -16,7 +16,7 @@ function Dashboard({ navigation }) {  // Desestructuramos `navigation` de las pr
         <AppButton 
           text={'Eventos'} 
           color='white' 
-          onPress={() => navigation.navigate('Eventos')}  // Usamos `navigation` correctamente aquí
+          onPress={() => navigation.navigate('Eventos')} 
         />
         <AppButton text={'Mis tickets'} color='primary' onPress={() => console.log('Tickets')} />
       </View>
