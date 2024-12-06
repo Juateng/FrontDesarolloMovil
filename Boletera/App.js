@@ -6,6 +6,10 @@ import Dashboard from './app/screens/Dashboard';
 import Eventos from './app/screens/Eventos';
 import CreateEvent from './app/screens/createevent';
 import EditEvent from './app/screens/editEvent';
+import Login from './app/screens/Login';
+import RegisterScreen from './app/screens/register';
+import ProfileScreen from './app/screens/profile';
+import ViewTicket from './app/screens/viewticket';
 
 const Stack = createNativeStackNavigator();
 
@@ -42,6 +46,30 @@ function App() {
           name="EditEvent" 
           component={EditEvent} 
           options={{ title: 'Editar Evento' }} 
+        />
+        {/* Pantalla de Login */}
+        <Stack.Screen 
+          name="Login" 
+          component={Login} 
+          options={{ title: 'Iniciar sesión' }} 
+        />
+        {/* Pantalla de Register (nuevo) */}
+        <Stack.Screen 
+          name="Register" 
+          component={RegisterScreen} 
+          options={{ title: 'Registrarse' }} 
+        />
+        {/* Pantalla de Perfil */}
+        <Stack.Screen 
+          name="Profile" 
+          component={ProfileScreen}
+          options={{ title: 'Perfil' }} 
+        />
+        {/* Pantalla de Ver Información del Ticket */}
+        <Stack.Screen 
+          name="ViewTicket" 
+          component={ViewTicket} 
+          options={{ title: 'Información del Ticket' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

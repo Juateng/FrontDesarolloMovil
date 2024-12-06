@@ -4,8 +4,8 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator
 function Eventos({ navigation }) {
   const [eventos, setEventos] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedEvent, setSelectedEvent] = useState(null); // Para almacenar el evento seleccionado
-  const [modalVisible, setModalVisible] = useState(false); // Controlar la visibilidad del modal
+  const [selectedEvent, setSelectedEvent] = useState(null); 
+  const [modalVisible, setModalVisible] = useState(false); 
 
   useEffect(() => {
     const fetchEventos = async () => {
@@ -97,10 +97,16 @@ function Eventos({ navigation }) {
                 <Text style={styles.modalText}>Fecha: {selectedEvent.date}</Text>
                 <Text style={styles.modalText}>Lugar: {selectedEvent.place}</Text>
                 <Text style={styles.modalText}>Descripción: {selectedEvent.description}</Text>
+                
                 <View style={styles.modalButtons}>
                   <Button title="Cerrar" onPress={closeModal} />
                   <Button title="Eliminar" color="red" onPress={handleDelete} />
                   <Button title="Editar" onPress={handleEdit} />
+                </View>
+
+                {/* Botón Registrar en una nueva fila */}
+                <View style={styles.registerButtonContainer}>
+                  <Button title="Registrar" color="green" onPress={() => alert('Registrado')} />
                 </View>
               </>
             )}
@@ -189,6 +195,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '100%',
     marginTop: 20,
+  },
+  registerButtonContainer: {
+    marginTop: 20, // Separa el botón Registrar de los anteriores
+    width: '100%',
   },
 });
 
