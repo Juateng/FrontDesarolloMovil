@@ -12,7 +12,7 @@ function Dashboard({ navigation }) {
     >
       <View style={styles.buttonContainer}> 
       <AppText texto={"Bienvenido, ¿Qué desea hacer?"} color="white" />
-        <AppButton text={'Usuarios'} color='primary' onPress={() => console.log('Usuarios')} />
+        <AppButton text={'Mi perfil'} color='primary' onPress={() => console.log('Usuarios')} />
         <AppButton 
           text={'Eventos'} 
           color='white' 

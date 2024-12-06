@@ -4,6 +4,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import Dashboard from './app/screens/Dashboard';
 import Eventos from './app/screens/Eventos';
+import CreateEvent from './app/screens/createevent';
+import EditEvent from './app/screens/editEvent';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +30,18 @@ function App() {
           name="Eventos" 
           component={Eventos} 
           options={{ title: 'Eventos' }}
+        />
+        {/* Pantalla de Crear Evento */}
+        <Stack.Screen 
+          name="Crear Evento" 
+          component={CreateEvent} 
+          options={{ title: 'Nuevo Evento' }} 
+        />
+        {/* Pantalla de Editar Evento */}
+        <Stack.Screen 
+          name="EditEvent" 
+          component={EditEvent} 
+          options={{ title: 'Editar Evento' }} 
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -7,7 +7,7 @@ function WelcomeScreen({ texto, navigation }) {
   return (
     <ImageBackground
       style={styles.background}
-      source={require('../assets/fondo.jpeg')}
+      source={require('../assets/3185113.jpg')}
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require('../assets/Designer.png')} />
